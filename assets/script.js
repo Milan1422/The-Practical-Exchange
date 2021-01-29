@@ -12,5 +12,13 @@ $.ajax({
     console.log(response);
 })
 
+// testing google map populating on page
+function googleMapPop(){
+    let mapDiv = $("<iframe>");
+    mapDiv.attr("src", "https://www.google.com/maps/embed/v1/view?key=AIzaSyCduODfiPUcej_InoxKiD8Re6Eb9RtsTeU&center=33.7537,-84.3863&zoom=15&maptype=roadmap");
+    $("#google-embed-map").append(mapDiv);    
+
+}
+googleMapPop();
 
 });
