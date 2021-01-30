@@ -9,7 +9,7 @@ $.ajax({
     url: queryURL,
     type: "GET"
 }).then(function(response){
-    console.log(response);
+    // console.log(response);
 })
 
 // testing google map populating on page
@@ -21,4 +21,32 @@ function googleMapPop(){
 }
 googleMapPop();
 
+
+// testing trash data populating on page
+function trashInfo(){
+    $.ajax({
+        url: queryURL,
+        type: "GET"
+    }).then(function(response){
+        let postsArray = (response.posts) 
+        // retrive post title
+        // $.each(postsArray, function(key, value){
+            // console.log(key + ": " + value)
+            for (let i = 0; i < postsArray.length; i++) {
+                let postTitles = postsArray[i];
+                console.log(postTitles);
+                $("#item-title").text(JSON.stringify(postTitles.title));
+                $("#item-description").text(JSON.stringify(postTitles.content));
+                // $("#item-picture").attr("src", postTitles.photos.url)
+               
+                // postTitles.append();
+            }
+    // });    
+    })
+    
+
+}
+trashInfo();
 });
+
+
