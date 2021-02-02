@@ -15,7 +15,7 @@ $.ajax({
 // testing google map populating on page
 function googleMapPop(){
     let mapDiv = $("<iframe>");
-    mapDiv.attr("src", "https://www.google.com/maps/embed/v1/view?key=AIzaSyCduODfiPUcej_InoxKiD8Re6Eb9RtsTeU&center=33.7537,-84.3863&zoom=15&maptype=roadmap");
+    mapDiv.attr("src", "https://www.google.com/maps/embed/v1/view?key=AIzaSyCduODfiPUcej_InoxKiD8Re6Eb9RtsTeU&center=34.0289,-84.1986&zoom=15&maptype=roadmap");
     $("#google-embed-map").append(mapDiv);    
 
 }
@@ -30,16 +30,18 @@ function trashInfo(){
     }).then(function(response){
         let postsArray = (response.posts) 
         // retrive post title
-        // $.each(postsArray, function(key, value){
-            // console.log(key + ": " + value)
             for (let i = 0; i < postsArray.length; i++) {
                 let postTitles = postsArray[i];
                 console.log(postTitles);
                 $("#item-title").text(JSON.stringify(postTitles.title));
                 $("#item-description").text(JSON.stringify(postTitles.content));
-                // $("#item-picture").attr("src", postTitles.photos.url)
+                if (postTitles.photos === null) {
+                    $("#item-picture").attr("src", "./images/picture-not-available-clipart.jpg")
+                } else {
+                    $("#item-picture").attr("src", postTitles.photos.url)
+                }
+                
                
-                // postTitles.append();
             }
     // });    
     })
