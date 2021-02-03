@@ -33,20 +33,6 @@ function trashInfo(){
         // retrive post title
             let postTitles = postsArray[i];
             console.log(postTitles);
-            // Next button 
-            $("#next-post-btn").on("click", function (){
-                i = (i + 1) % postsArray.length;
-                console.log(postsArray[i]);
-                postTitles = postsArray[i];
-                return postsArray[i]
-            })
-            // Previous button
-            $("#previous-post-btn").on("click", function(){
-                i = (i - 1) % postsArray.length;
-                console.log(postsArray[i]);
-
-            })
-            
             $("#item-title").text(JSON.stringify(postTitles.title));
             $("#item-description").text(JSON.stringify(postTitles.content));
             if (postTitles.photos === null) {
@@ -54,7 +40,36 @@ function trashInfo(){
             } else {
                 $("#item-picture").attr("src", postTitles.photos.url)
             }
-            
+            // Next button 
+            $("#next-post-btn").on("click", function (){
+                i = (i + 1) % postsArray.length;
+                console.log(postsArray[i]);
+                let postTitles = postsArray[i];
+            console.log(postTitles);
+            $("#item-title").text(JSON.stringify(postTitles.title));
+            $("#item-description").text(JSON.stringify(postTitles.content));
+            if (postTitles.photos === null) {
+                $("#item-picture").attr("src", "./images/picture-not-available-clipart.jpg")
+            } else {
+                $("#item-picture").attr("src", postTitles.photos.url)
+            }
+                
+            })
+            // Previous button
+            $("#previous-post-btn").on("click", function(){
+                i = (i - 1) % postsArray.length;
+                console.log(postsArray[i]);
+                let postTitles = postsArray[i];
+            console.log(postTitles);
+            $("#item-title").text(JSON.stringify(postTitles.title));
+            $("#item-description").text(JSON.stringify(postTitles.content));
+            if (postTitles.photos === null) {
+                $("#item-picture").attr("src", "./images/picture-not-available-clipart.jpg")
+            } else {
+                $("#item-picture").attr("src", postTitles.photos.url)
+            }
+
+            })
     })
 }
 trashInfo();
