@@ -14,121 +14,146 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar is-transparent is-black">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="https://trashnothing.com/beta/">
-                    <img src="https://clipartstation.com/wp-content/uploads/2018/10/recycle-symbol-clipart-4.png"
+    <nav class="navbar is-transparent is-black px-4 ">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://trashnothing.com/beta/">
+                <img src="https://clipartstation.com/wp-content/uploads/2018/10/recycle-symbol-clipart-4.png"
                     alt="Trash Nothing" width="50" height="28">
-                </a>
-                <span class="title has-text-success mt-4">Practical Exchange</span>
-                <div class="navbar-burger" data-target="navbarExampleTransparentExample">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            </a>
+            <span class="title has-text-success mt-4">Practical Exchange</span>
+            <!-- need to fix burger navbar -->
+            <div role="button" class="navbar-burger" data-target="navbarExampleTransparentExample" aria-label="menu"
+                aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </div>
-            
-            <div id="navbarExampleTransparentExample" class="navbar-menu">
-                <div class="navbar-start"></div>
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="field has-addons">
-                            <div class="control">
-                                <input class="input" type="text">
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start"></div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field has-addons">
+                        <div class="control">
+                            <input class="input" type="text">
+                        </div>
+                        <div class="control">
+                            <a class="button is-success">
+                                Search
+                            </a>
+                        </div>
+                        <div class="control has-icons-left">
+                            <div class="select">
+                                <select>
+                                    <option selected>10 miles</option>
+                                    <option>25 miles</option>
+                                    <option>50 miles</option>
+                                </select>
                             </div>
-                            <div class="control">
-                                <a class="button is-success">
-                                    Search
-                                </a>
-                            </div>
-                            <div class="control has-icons-left">
-                                <div class="select">
-                                    <select>
-                                        <option selected>10 miles</option>
-                                        <option>25 miles</option>
-                                        <option>50 miles</option>
-                                    </select>
-                                </div>
-                                <div class="icon is-small is-left">
-                                    <i class="fas fa-search-location"></i>
-                                </div>
+                            <div class="icon is-small is-left">
+                                <i class="fas fa-search-location"></i>
                             </div>
                         </div>
-                        
                     </div>
+
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <div class="container">
         <div class="notification is-white transparent">
             <!-- need to make custom break points for different sized screens to keep the map in the corner -->
-                <div class="tile is-parent">
-                    </article>
-                    <article id="google-embed-map" class="tile is-12 is-child notification has-text-centered pr-0 is-white">
-                    </article>
+            <div class="tile is-parent">
+
+                <article id="google-embed-map" class="tile is-12 is-child notification has-text-centered pr-0 is-white">
+                </article>
+            </div>
+            <div class="tile ">
+                <div class="tile is-2 is-parent is-vertical notification is-white">
+                    <div class="tile is-child "></div>
+                    <div class="tile is-child  has-text-centered px-0">
+
+                        <button id="previous-post-btn" class="button is-success is-centered is-large">Previous</button>
+                    </div>
+                    <div class="tile is-child "></div>
                 </div>
-                <div class="tile ">
-                    <div class="tile is-2 is-parent is-vertical notification is-white">
-                        <div class="tile is-child "></div>
-                        <div class="tile is-child  has-text-centered px-0">
-
-                            <button id="previous-post-btn" class="button is-success is-centered">Previous</button>
-                        </div>
-                        <div class="tile is-child "></div>
-                    </div>
-                    <div class="tile is-8 is-child notification is-success ">
-                        <p id = "item-title" class="title">Practical Exchange</p>
-                        <p id= "item-description" class="subtitle">With an image</p>
-                        <figure class="image is-5by4">
-                          <img id="item-picture">
-                        </figure>
-                    </div>
-                    <div class="tile is-2 is-parent is-vertical notification is-white">
-                        <div class="tile is-child "></div>
-                        <div class="tile is-child  has-text-centered px-0">
-                            <button id="next-post-btn" class="button is-success is-centered">Next</button>
-                        </div>
-                        <div class="tile is-child "></div>
-                    </div>
+                <div class="tile is-8 is-child notification is-success ">
+                    <p id="item-title" class="title">Practical Exchange</p>
+                    <p id="item-description" class="subtitle">With an image</p>
+                    <figure class="image is-5by4">
+                        <img id="item-picture">
+                    </figure>
                 </div>
-                <div class="tile is-parent ">
-                    <article class="tile is-child is-11 box">
-
-                        <p class="title">Item Description:</p>
-                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate
-                            recusandae et quis reprehenderit
-                            veritatis tempora earum explicabo sapiente. Soluta, ut deleniti voluptas cum laborum maiores
-                            rem
-                            in minus ducimus!</p>
-
-                    </article>
-                    <div class="tile is-parent is-vertical">
-                        <div class="tile is-child">
-                            <span class="icon is-large">
-                                <i class="fas fa-2x fa-heart"></i>
-                            </span>
-                        </div>
-                        <div class="tile is-child">
+                <div class="tile is-2 is-parent is-vertical notification is-white">
+                    <div class="tile is-child "></div>
+                    <div class="tile is-child  has-text-centered px-0">
+                        <button id="next-post-btn" class="button is-success is-centered is-large">Next</button>
+                    </div>
+                    <div class="tile is-child "></div>
+                </div>
+            </div>
+            <div class="tile is-parent ">
+                <div id="favorites" class="tile is-parent is-11 box">
+                    <div class="tile is-child box "></div>
+                    <div class="tile is-child box "></div>
+                    <div class="tile is-child box "></div>
+                    <div class="tile is-child box "></div>
+                    <div class="tile is-child box "></div>
+                </div>
+                <div class="tile is-parent is-vertical">
+                    <div class="tile is-child">
+                        <span class="icon is-large">
+                            <i class="fas fa-2x fa-heart"></i>
+                        </span>
+                    </div>
+                    <!-- <div class="tile is-child">
                             <span class="icon is-large">
                                 <i class="fas fa-2x fa-envelope"></i>
                             </span>
-                        </div>
+                        </div> -->
 
-                    </div>
-                </div>
-                <div class="tile is-parent box">
-                    <div class="tile is-child box"></div>
-                    <div class="tile is-child box"></div>
-                    <div class="tile is-child box"></div>
-                    <div class="tile is-child box"></div>
-                    <div class="tile is-child box"></div>
                 </div>
             </div>
+            <!-- <div class="tile is-parent box">
+                    <div class="tile is-child box"></div>
+                    <div class="tile is-child box"></div>
+                    <div class="tile is-child box"></div>
+                    <div class="tile is-child box"></div>
+                    <div class="tile is-child box"></div>
+                </div> -->
         </div>
     </div>
     </div>
     </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
 
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
 </body>
 
 </html>
