@@ -1,5 +1,5 @@
 body {
-    background-image: url("/images/recycle.png");
+    background-image: url("../images/recycle.png");
     background-position: center;
     background-color: linear-gradient(to right, rgb(242, 247, 244), rgb(186, 197, 193));
 }
