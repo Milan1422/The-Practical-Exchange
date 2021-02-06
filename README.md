@@ -6,7 +6,7 @@ Your project should fulfill the following requirements:
 
 * Be deployed to GitHub Pages.
 
-<!-- * Be interactive (i.e., accept and respond to user input). -->
+* Be interactive (i.e., accept and respond to user input).
 
 * Use at least two server-side APIs.
 
@@ -24,7 +24,9 @@ Your project should fulfill the following requirements:
 
 # The Project:
 
-Our project was created on tha basis of a barter exchange application that allows the user to search items in a particular city and find them using a site called trash nothing. The site allows other people who are trying to get rid of items that are no longer needed and post it to the website. The user can go into the application and search in Atlanta area and see the posts also the embedded map gives the user the ability to see the general area of the post to know how far they would have to travel to pick up the item. As stated above as a group we were to use a CSS framework other than bootstrap so we used Bulma. Bulma is a free, open source framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces. The site is deployed to GitHub Pages and has a working URL that each group member tested individually. As stated above two server side API's were needed to fulfill the requirements the two we chose are Google maps (the emebedded map the user can also click on to enlarge) and Trash Nothing (this is the one displaying the posts and the image if one is provided). The application is responsive in the fact when the previous and next buttons are pushed the post is moved to the next one, th image is updated, and the map location is updated as well all work simultaneously. The UI is also polished and represents the trash nothing theme of recycling and passing on someone's unused items to the benefit of another. The repository is clean and organized with folders containing assets, images for the webpage, and also screenshots so anyone looking into the details can see the progression of the application from the starting framework to the final ending deployed user interface. In meeting the requirements above the unique name, description, and technologies used are stated above and the screenshot, link to deployed application will be below. 
+User Story: As a frugal collector, I want an app that will find rare, fascinating and  FREE items in my area. I would also like for it to find items in a given city so that if I'm traveling I can continue to expand my collection. This app also has to be easy to use, very user friendly.
+
+Our project was created on the basis of a barter exchange application that allows the user to search items in a particular city and find them using a site called trash nothing. The site allows other people who are trying to get rid of items that are no longer needed and post it to the website. The user can go into the application and search a city and see the posts also the embedded map gives the user the ability to see the general area of the post to know how far they would have to travel to pick up the item. As stated above as a group we were to use a CSS framework other than bootstrap so we used Bulma. Bulma is a free, open source framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces. The site is deployed to GitHub Pages and has a working URL that each group member tested individually. As stated above two server side API's were needed to fulfill the requirements the two we chose are open weather geolocation with Google maps(the emebedded map the user can also click on to enlarge) and Trash Nothing (this is the one displaying the posts and the image if one is provided). The application is responsive in the fact when the previous and next buttons are pushed the post is moved to the next one, th image is updated, and the map location is updated as well all work simultaneously. The UI is also polished and represents the trash nothing theme of recycling and passing on someone's unused items to the benefit of another. The repository is clean and organized with folders containing assets, images for the webpage, and also screenshots so anyone looking into the details can see the progression of the application from the starting framework to the final ending deployed user interface. In meeting the requirements above the unique name, description, and technologies used are stated above and the screenshot, link to deployed application will be below. 
 
 # Lessons:
 
@@ -38,7 +40,8 @@ Our takeaways from this project were endless in the front end web development te
 
 <img width="1440" alt="Practical Exchange3" src="https://user-images.githubusercontent.com/73844796/107075789-99635780-67b8-11eb-8270-313eda74caaa.png">
 
-<img width="1440" alt="Practical Exchange4" src="https://user-images.githubusercontent.com/73844796/107075896-bc8e0700-67b8-11eb-8b7b-869bb99baba9.png">
+<img width="1440" alt="Practical Exchange5" src="https://user-images.githubusercontent.com/73844796/107120985-f533ec00-685d-11eb-9238-4b38558105bc.png">
+
 
 More screenshots available in The-Practical-Exchange/screenshots
 
