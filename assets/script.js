@@ -81,7 +81,7 @@ $("#search-btn").on("click", function(){
     let newSearchArea = $("#search-input").val();
 
     $.ajax({
-        url: "http://api.openweathermap.org/geo/1.0/direct?q=" + newSearchArea + "&limit=1&appid=f261145622245616c003651f582a49a8",
+        url: "https://api.openweathermap.org/geo/1.0/direct?q=" + newSearchArea + "&limit=1&appid=f261145622245616c003651f582a49a8",
         type: "GET"
     }).then(function(response){
         console.log(response)
