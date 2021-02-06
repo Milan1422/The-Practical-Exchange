@@ -48,3 +48,7 @@ More screenshots available in The-Practical-Exchange/screenshots
 # Deployment URL: 
 
 * https://milan1422.github.io/The-Practical-Exchange/
+
+# Project Presentation Slides 
+
+* https://docs.google.com/presentation/d/1Pzi0wOJ7cYP1RdQVeZuB-7J1nHBs8aMP5lrCFhC4j5M/edit?usp=sharing
