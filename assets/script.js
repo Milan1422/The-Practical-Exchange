@@ -3,6 +3,7 @@ $(document).ready(function(){
     
     let queryURL = "https://trashnothing.com/api/v1.2/posts?types=offer%2Cwanted&sources=trashnothing&per_page=20&page=1&device_pixel_ratio=1&latitude=33.753746&longitude=-84.386330&radius=8046&api_key=neM53IMDcPYKL6OY2kVpLv4pLEJCNrhE5qvGNSm5"
     let i = 0;
+    let list = JSON.parse(window.localStorage.getItem("items")) || [];
     
     // testing trash data populating on page
     function trashInfo(){
@@ -68,6 +69,23 @@ $(document).ready(function(){
             let lon = postTitles.longitude;
             mapDiv.attr("src", "https://www.google.com/maps/embed/v1/view?key=AIzaSyCduODfiPUcej_InoxKiD8Re6Eb9RtsTeU&center=" + lat + "," + lon + "&zoom=15&maptype=roadmap");
             $("#google-embed-map").html(mapDiv);     
+        })
+        $(".fa-heart").on("click", function(){
+           
+            var postTitles = postsArray[i]
+            var favorite = postTitles.title
+            var savedItem = {
+                name:favorite
+            }
+            list.push(savedItem)
+            
+        
+        localStorage.setItem("items" ,JSON.stringify(list));
+        JSON.parse(localStorage.getItem("items"));
+        $("#favorites ").text(favorite); 
+        
+        console.log("favorite",favorite)
+        
         })
         
         
